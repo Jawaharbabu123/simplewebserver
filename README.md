@@ -26,7 +26,7 @@ content = """<html>
     <body>
         <h1 align="center">LAPTOP SPECIFICATIONS (jawahar,24004142) </h1>
         <ol>
-        <li>Device name - DESKTOP-MOHHBTU</li>
+        <li>Device name - jawahar</li>
         <li>Processor - 13th Gen Intel(R) Core(TM) i5-1335U 1.30 GHz</li>
         <li>RAM - 16gb</li>
         <li>Device ID - 15EEA3B2-7EF5-4DEC-903D-577382C3C005</li>
