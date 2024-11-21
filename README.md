@@ -1,5 +1,5 @@
 # EX01 Developing a Simple Webserver
-## Date:18.10.2024
+## Date:20.11.2024
 ## AIM:
 To develop a simple webserver to serve html pages and display the configuration details of laptop.
 
@@ -21,19 +21,26 @@ Testing the webserver.
 
 ## PROGRAM:
 ```
-from http.server import HTTPServer, BaseHTTPRequestHandler
-content = """<html>
+from http.server import HTTPServer, BaseHTTPRequestHandler 
+content = """
+
+<html>
     <body>
         <h1 align="center">LAPTOP SPECIFICATIONS (jawahar,24004142) </h1>
-        <ol>
-        <li>Device name - jawahar</li>
-        <li>Processor - 13th Gen Intel(R) Core(TM) i5-1335U 1.30 GHz</li>
-        <li>RAM - 16gb</li>
-        <li>Device ID - 15EEA3B2-7EF5-4DEC-903D-577382C3C005</li>
-        <li>System Type - 64 bit </li></ol>
+        <ul type="circle">
+        <li><b>Device name</b>b>  jawahar</li>
+        <li><b>Processor</b>  13th Gen Intel(R) Core(TM) i5-1335U 1.30 GHz</li>
+        <li><b>RAM</b>  16.0 GB (15.7 GB usable)</li>
+        <li><b>Device ID</b>  15EEA3B2-7EF5-4DEC-903D-577382C3C005</li>
+        <li><b>Product ID</b> 00342-42709-07438-AAOEM </li>
+        <li><b>System type</b> 64-bit operating system, x64-based processor</li>
+        <li><b>Pen and touch</b> No pen or touch input is available for this display</li>
+    </ol>
     </body>
-</html>    
+</html>
+
 """
+
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print("request received")
@@ -50,10 +57,11 @@ httpd.serve_forever()
 
 ## OUTPUT:
 
+![WhatsApp Image 2024-11-21 at 23 24 51_67b7872b](https://github.com/user-attachments/assets/9edda8a8-8743-48d0-9b2b-4f6b9c9611ce)
 
-![Screenshot 2024-11-19 211258](https://github.com/user-attachments/assets/8b95d66c-418b-4d5b-9306-760fce7ec9db)
 
-![Screenshot 2024-11-19 211655](https://github.com/user-attachments/assets/bfb11c9e-1ce8-4438-9017-0e28a6a6c5e4)
+![WhatsApp Image 2024-11-21 at 23 24 40_8d596bd1](https://github.com/user-attachments/assets/291dbd58-ed14-450c-80b7-7767d4b7e6bf)
+
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
